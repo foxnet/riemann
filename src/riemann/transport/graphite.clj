@@ -126,7 +126,7 @@
                                         core nil channel-group graphite-handler))
            pipeline-factory (channel-pipeline-factory
                               frame-decoder  (DelimiterBasedFrameDecoder.
-                                               1024
+                                               2048
                                                (Delimiters/lineDelimiter))
                               ^:shared string-decoder (StringDecoder.
                                                         CharsetUtil/UTF_8)
